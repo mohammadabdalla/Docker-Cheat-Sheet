@@ -114,4 +114,32 @@ if i run:
   13)docker logs <container_logs>
 
   to view the logs of a specified container.
+  
+  
+  ============================================================================================================
+  
+  Docker Environment Variables:
+  
+  Let assume that we want to pass an environment variable called APP_COLOR
+  
+  docker run -e APP_COLOR=red simple-webapp-color
+  
+  you can use docker inspect command to view environment variables as well.
+  
+  ===========================================================================================================
+  
+  ![image](https://user-images.githubusercontent.com/52213112/206317344-9b0d1398-b0e4-45ed-bb68-49c6f3cee33b.png)
+  
+  ![image](https://user-images.githubusercontent.com/52213112/206317401-f8edc2eb-c4e7-4c60-9ddf-1d5e57e76d27.png)
+  
+![image](https://user-images.githubusercontent.com/52213112/206317534-2158851b-e486-4ecd-aef5-b3fbcccc28f0.png)
+
+![image](https://user-images.githubusercontent.com/52213112/206317733-5dd70a62-5a83-456f-b6e0-6f5ffcb22525.png)
+
+![image](https://user-images.githubusercontent.com/52213112/206317942-f7e808f2-8bc5-42f3-9b8f-83bd7e2b61e1.png)
+
+![image](https://user-images.githubusercontent.com/52213112/206318179-90f8a36b-b1d7-4bb1-aebd-86f51d0142f9.png)
+
+
+
 
