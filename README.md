@@ -139,7 +139,20 @@ if i run:
 ![image](https://user-images.githubusercontent.com/52213112/206317942-f7e808f2-8bc5-42f3-9b8f-83bd7e2b61e1.png)
 
 ![image](https://user-images.githubusercontent.com/52213112/206318179-90f8a36b-b1d7-4bb1-aebd-86f51d0142f9.png)
+  
+  ![image](https://user-images.githubusercontent.com/52213112/206655256-f42d71ab-582b-4889-8ed4-890863f92faf.png)
+===============================================================================================================
+  
+  To run an image and give another name:
+  
+  image name: myapp
+  
+  docker run --name myapp_c1 myapp
 
-
+What the following does?
+  
+  docker build -t myapp2 .
+  
+  running a docker file in the currency directory to build an image and give it a name
 
 
