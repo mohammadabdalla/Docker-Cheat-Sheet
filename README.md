@@ -150,8 +150,9 @@ if i run:
   docker run --name myapp_c1 myapp
 
 What the following does?
-  
-  docker build -t myapp2 .
+  -docker build -t myapp5 .
+  building an image based on docker rile in the current directory and calling the image myapp5
+  -docker build -t myapp2 .
   
   running a docker file in the currency directory to build an image and give it a name
 
