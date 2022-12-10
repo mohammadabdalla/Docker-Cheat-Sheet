@@ -152,14 +152,42 @@ if i run:
 What the following does?
   -docker build -t myapp5 .
   building an image based on docker rile in the current directory and calling the image myapp5
-  -docker build -t myapp2 .
+  -docker build -t myapp2:test .
   
-  running a docker file in the currency directory to build an image and give it a name
+  running a docker file in the currency directory to build an image and give it a name and a tag
 
+  
+  -docker run --name my_container -p 4000:4000 myapp2:test
+  start container with name my_container and map ports from local to container 
+  
+  -docker run --name my_container -p 4000:4000 -rm myapp2:test
+  the -rm to remove the container once we stop later on.
 ===============================================================================================================
   
   Docker Volumes
   
+ The purpose of using Docker volumes is to persist data outside the container so it can be backed up or shared. Docker volumes are dependent on Docker's file system     and are the preferred method of persisting data for Docker containers and services.  
+  
   First off note that if you built an image based on a code and then you changed the code you to build the image again since it doesn't update automatically.
+  
+  with volumes we can map our local project folder to the container folder.
+  using the option -v
+  
+  docker run --name my_container -p 4000:4000 -rm -v C:\Users:\Desktop\api:/app myapp2:test
+  
+  before the colon is the path of out project locally and after the colon isthe path of our container (it depends on what we specified previously)
+  
+  But this can make a problem that if we deleted the dependencies of a project for examples deleting node modules this is ganna be sync with container resulting of a crach of the app
+  
+  the solution can be as follows by adding another volume:
+  
+  docker run --name my_container -p 4000:4000 -rm -v C:\Users:\Desktop\api:/app -v /app/node_modules myapp2:test
+  
+  the second volume will map the node modules to a specific path in the container.
+  
+  
+  
+ 
+  
   
   
