@@ -156,4 +156,10 @@ What the following does?
   
   running a docker file in the currency directory to build an image and give it a name
 
-
+===============================================================================================================
+  
+  Docker Volumes
+  
+  First off note that if you built an image based on a code and then you changed the code you to build the image again since it doesn't update automatically.
+  
+  
