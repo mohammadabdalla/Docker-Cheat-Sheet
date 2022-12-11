@@ -186,6 +186,32 @@ What the following does?
   the second volume will map the node modules to a specific path in the container.
   
   
+  =============================================================================================================================
+  
+  Docker Compose
+  
+  You can set the desired amount of containers counts, their builds, and storage designs, and then with a single set of commands you can build, run and configure all     the containers. Docker Compose is great for development, testing, and staging environments, as well as continuous integration workflows.
+  
+  To run docker compose file:
+  
+  Just run the following command:
+  
+  docker-compose up
+  
+  the following command stops and deletes the container but the images and the volumes wil remain:
+  
+  docker-compose down
+  
+  the remove all the images as well:
+  
+  docker-compose down --rmi all
+  
+  to remove the volumes as well:
+  
+  docker-compose down --rmi all -v
+  
+  
+  
   
  
   
